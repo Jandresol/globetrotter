@@ -12,6 +12,8 @@ body{
     padding: 0;
     background-color: #f4f4f4;
 }
+
+
 header{
     color: white;
     font-family: serif;
@@ -20,7 +22,7 @@ header{
     background-color: black;
     align-items: center;
     justify-content: center;
-    height: 40vh
+    height: 50vh
 }
 
 header > h1{
@@ -275,10 +277,45 @@ nav li a:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 43px;
+    text-align: center;
 }
 
+#history-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color:#232a45;
+}
+
+#history-content h2{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.history-card{
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 800px;
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    padding: 40px;
+    border: 1px solid rgba(50, 41, 41, 0.5);
+}
+
+#history-content p{
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
 #attractions-header{
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://static01.nyt.com/images/2017/12/10/travel/10HAITI-slide-2V09/10HAITI-slide-2V09-superJumbo.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url('https://static01.nyt.com/images/2017/12/10/travel/10HAITI-slide-2V09/10HAITI-slide-2V09-superJumbo.jpg') center/cover no-repeat;
 }
 
 #attractions-content {
@@ -288,6 +325,21 @@ nav li a:hover{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.attractions-text {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.attractions-text h2 {
+    margin-bottom: 0px;
+}
+
 
 .image-container{
     overflow: hidden;
@@ -305,6 +357,7 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -447,15 +500,16 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: transform 0.3s ease;
+
 }
 .gallery-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
-.gallery-card img:hover {
-    transform: scale(1.05);
+.gallery-card:hover {
+    transform: translateY(-20px);
 }
 .gallery-card h3 {
     font-size: 1.5rem;
@@ -463,9 +517,52 @@ nav li a:hover{
     margin: 0px 0;
 }
 
+#gallery-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;
+    background-color: #f4f4f4;
+}
+
 #map-header{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://cdn.prod.website-files.com/5efcb2de6010ca2c18f0cf59/63dcd51436664330c88a392e_geographical-map.jpg') center/cover no-repeat;
 }
+
+.video-wrapper {
+    width: 1000px;
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+.video-wrapper iframe {
+    width: 100%;
+    border: none;
+    display: block;
+}
+
+#video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 0px;
+    background-color: white
+
+}
+
+#video-content h2 {
+    margin: 20px;
+}
+
 footer{
     background-color: black;
     color: white;
@@ -473,3 +570,4 @@ footer{
     padding: 20px 0;
     font-size: 1rem;
 }
+
