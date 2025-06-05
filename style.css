@@ -1,0 +1,475 @@
+
+.alumni-sans-sc{
+    font-family: "Alumni Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header{
+    color: white;
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 40vh
+}
+
+header > h1{
+    margin-top:70px;
+    font-size: 3rem;
+}
+#landing{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://lp-cms-production.imgix.net/2022-02/GettyImages-508265944%20RFC.jpg?w=1095&fit=crop&crop=faces%2Cedges&auto=format&q=75');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h2{
+    font-size: 2rem;
+}
+#landing > h1{
+    color: white;
+    font-size: 6rem;
+}
+nav{
+    width: 75%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li > a {
+    padding: 1rem;
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav li a.active{
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover{
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+#logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.button{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+#explore-button {
+    font-family: serif;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: rgba(255, 201, 201, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease;
+
+
+}
+
+#explore-button:hover {
+    background-color: rgba(255, 201, 201, 0.6);
+}
+#explore-button:active {
+    background-color: rgba(255, 201, 201, 0.8);
+}
+
+
+#introduction{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 1.2rem;
+    color: #5a5e6b;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.intro-card {
+    width: 250px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-15px);
+}
+
+#Jeremie{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Cath%C3%A9drale_J%C3%A9r%C3%A9mie_Ha%C3%AFti.JPG') center/cover no-repeat;
+}
+
+#Jacmel{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/JacmelView.jpg') center/cover no-repeat;
+}
+
+
+.primary-button {
+    background-color: #232a45;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #414967;
+    color: white;
+}
+
+
+.secondary-button {
+    background-color: white;
+    color: #1a1a1a;
+    border: 1px solid #ddd;
+}
+
+.secondary-button:hover {
+    background-color: rgb(199, 199, 199);
+    color: #1a1a1a;
+}
+
+.experience-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.experience-card:hover {
+    transform: translateY(-15px);
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: black;
+}
+.experience-card p {
+    font-size: 1rem;
+    color: #5a5e6b;
+    padding: 0 20px 20px;
+}
+
+#experiences{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 43px;
+}
+
+#attractions-header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://static01.nyt.com/images/2017/12/10/travel/10HAITI-slide-2V09/10HAITI-slide-2V09-superJumbo.jpg') center/cover no-repeat;
+}
+
+#attractions-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image-container{
+    overflow: hidden;
+    position: relative;
+    top: 0;
+
+}
+.list-card{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.list-card img:hover {
+    transform: scale(1.05);
+
+}
+
+.list-card h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin: 20px 0;
+}
+.list-card p {
+    font-size: 1rem;
+    color: #5a5e6b;
+    padding: 0 20px 20px;
+}
+
+#food-header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://haitiwonderland.com/assets/images/upload/blog/haiti_variete-et-tradition_1706834946.jpg') center/cover no-repeat;
+}
+
+#food-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.food-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-text {
+    padding: 10px;
+    margin: 20px;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-text p {
+    text-align: left;
+    font-size: 1rem;
+    color: #5a5e6b;
+    padding: 0;
+    margin: 0;
+}
+
+.card-text a {
+    margin: 20px;
+}
+
+.card-text-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-text .tag {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+#gallery-header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://www.alluringworld.com/wp-content/uploads/2020/04/3-Saut-Mathurine.jpg') center/cover no-repeat;
+}
+#gallery-content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+    #gallery-content {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+    #food-content {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    .experience-card, .gallery-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #gallery-content {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    #food-content {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+    #attractions-content {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+    .experience-card, .gallery-card {
+        width: 100%;
+    }
+}
+
+.gallery-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.gallery-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.gallery-card img:hover {
+    transform: scale(1.05);
+}
+.gallery-card h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0px 0;
+}
+
+#map-header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://cdn.prod.website-files.com/5efcb2de6010ca2c18f0cf59/63dcd51436664330c88a392e_geographical-map.jpg') center/cover no-repeat;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
