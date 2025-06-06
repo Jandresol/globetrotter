@@ -16,7 +16,7 @@ body{
 
 header{
     color: white;
-    font-family: serif;
+    font-family: "DM Serif Sans", serif;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -30,7 +30,7 @@ header > h1{
     font-size: 3rem;
 }
 #landing{
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://lp-cms-production.imgix.net/2022-02/GettyImages-508265944%20RFC.jpg?w=1095&fit=crop&crop=faces%2Cedges&auto=format&q=75');
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url('https://lp-cms-production.imgix.net/2022-02/GettyImages-508265944%20RFC.jpg?w=1095&fit=crop&crop=faces%2Cedges&auto=format&q=75');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -38,6 +38,9 @@ header > h1{
 
 h2{
     font-size: 2rem;
+    font-family: "DM Serif Sans", serif;
+    margin: 10px;
+
 }
 #landing > h1{
     color: white;
@@ -307,6 +310,8 @@ nav li a:hover{
 }
 .experience-card h3 {
     font-size: 1.5rem;
+    font-family: "DM Serif Sans", serif;
+    margin-bottom: 0ox;
     color: black;
 }
 .experience-card p {
@@ -366,7 +371,7 @@ nav li a:hover{
 
 
 #attractions-header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url('https://static01.nyt.com/images/2017/12/10/travel/10HAITI-slide-2V09/10HAITI-slide-2V09-superJumbo.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .5)), url('https://static01.nyt.com/images/2017/12/10/travel/10HAITI-slide-2V09/10HAITI-slide-2V09-superJumbo.jpg') center/cover no-repeat;
 }
 
 #attractions-content {
@@ -393,6 +398,7 @@ nav li a:hover{
 
 
 .image-container{
+    width: 100%;
     overflow: hidden;
     position: relative;
     top: 0;
@@ -519,15 +525,20 @@ nav li a:hover{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+    #gallery-content {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
 @media screen and (max-width: 1023px) {
     #introduction{
         flex-wrap: wrap;
 
     }
-
     #gallery-content {
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
+
     #food-content {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
@@ -539,7 +550,7 @@ nav li a:hover{
 
 @media screen and (max-width: 768px) {
     #gallery-content {
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
     #food-content {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -583,6 +594,7 @@ nav li a:hover{
     font-size: 1.5rem;
     color: black;
     margin: 15px;
+    font-family: "DM Serif Display", serif;
 }
 
 #gallery-container{
@@ -601,7 +613,7 @@ nav li a:hover{
 }
 
 #map-header{
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://cdn.prod.website-files.com/5efcb2de6010ca2c18f0cf59/63dcd51436664330c88a392e_geographical-map.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url('https://cdn.prod.website-files.com/5efcb2de6010ca2c18f0cf59/63dcd51436664330c88a392e_geographical-map.jpg') center/cover no-repeat;
 }
 
 .video-wrapper {
@@ -634,6 +646,8 @@ nav li a:hover{
 }
 
 #video-content h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
     margin: 20px;
 }
 
@@ -681,6 +695,7 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    gap: 0px;
 }
 
 .dropdown-content li {
@@ -698,7 +713,7 @@ nav li a:hover{
 
 .dropdown-content a:hover {
     background-color: #f0f0f0;
-    color: #1b359c;
+    color: #a2482d;
 }
 
 .dropdown:hover .dropdown-content {
