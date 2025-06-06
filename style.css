@@ -706,6 +706,7 @@ nav li a:hover{
         justify-content: center;
         height: auto;
         position: relative;
+        overflow: none;
     }
     #navigation {
         flex-direction: column;
