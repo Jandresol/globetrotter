@@ -43,13 +43,24 @@ h2{
     color: white;
     font-size: 6rem;
 }
-nav{
-    width: 75%;
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
     padding: 10px 20px;
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
 
 }
+
 
 
 ul {
@@ -58,16 +69,18 @@ ul {
     margin: 0;
     padding: 0;
     gap: 15px;
-
+    align-items: center;
 }
 
 li {
     display: inline;
+
 }
 
 a {
     text-decoration: none;
     color: white;
+
 }
 
 nav li > a {
@@ -95,6 +108,42 @@ nav li a:hover{
     justify-content: space-between;
     width: 75%;
 }
+
+@media (max-width: 728px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+    #navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        position: relative
+    }
+
+    nav{
+        width: 100%;
+        position: relative;
+        padding: 10px 20px;
+    }
+    ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav li > a {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+}
+
 
 #logo{
     font-size: 2rem;
@@ -198,6 +247,7 @@ nav li a:hover{
 
 .intro-card:hover {
     transform: translateY(-15px);
+    cursor: pointer;
 }
 
 #Jeremie{
@@ -241,11 +291,13 @@ nav li a:hover{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .experience-card:hover {
     transform: translateY(-15px);
+    cursor: pointer;
 }
 
 .experience-card img {
@@ -286,7 +338,7 @@ nav li a:hover{
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color:#232a45;
+    background: linear-gradient(rgba(13, 13, 15, 0.75), rgba(1, 1, 3, 0.5)), url('https://www.cjr.org/wp-content/uploads/2022/05/GettyImages-1185882293-scaled.jpg') center/cover no-repeat;
 }
 
 #history-content h2{
@@ -298,15 +350,14 @@ nav li a:hover{
 
 .history-card{
     background-color: rgba(255, 255, 255, 0.05);
-    width: 800px;
-    backdrop-filter: blur(4px);
+    width: 80vw;
+    backdrop-filter: blur(10px);
     border-radius: 1rem;
     padding: 40px;
-    border: 1px solid rgba(50, 41, 41, 0.5);
+    border: 1px solid rgba(22, 21, 37, 0.5);
 }
 
 #history-content p{
-    max-width: 800px;
     font-size: 1.2rem;
     color: #bbbbbb;
     text-align: center;
@@ -370,6 +421,7 @@ nav li a:hover{
 
 .list-card img:hover {
     transform: scale(1.05);
+    cursor: pointer;
 
 }
 
@@ -383,6 +435,7 @@ nav li a:hover{
     color: #5a5e6b;
     padding: 0 20px 20px;
 }
+
 
 #food-header{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://haitiwonderland.com/assets/images/upload/blog/haiti_variete-et-tradition_1706834946.jpg') center/cover no-repeat;
@@ -407,9 +460,11 @@ nav li a:hover{
     text-align: center;
 }
 
-.food-card img {
-    width: 100%;
+.food-card .image-container{
     height: 250px;
+
+}
+.food-card img {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -417,15 +472,17 @@ nav li a:hover{
 .card-text {
     padding: 10px;
     margin: 20px;
-    gap: .5rem;
+    margin-top:0px;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .card-text p {
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     color: #5a5e6b;
     padding: 0;
@@ -453,7 +510,7 @@ nav li a:hover{
 }
 
 #gallery-header{
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://www.alluringworld.com/wp-content/uploads/2020/04/3-Saut-Mathurine.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(47, 51, 88, 0.5), rgba(32, 58, 154, 0.5)), url('https://haitiantimes.com/wp-content/uploads/2024/08/DJI_20230721202924_0004_D-scaled.jpg') center/cover no-repeat;
 }
 #gallery-content {
     display: grid;
@@ -463,6 +520,11 @@ nav li a:hover{
 }
 
 @media screen and (max-width: 1023px) {
+    #introduction{
+        flex-wrap: wrap;
+
+    }
+
     #gallery-content {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
@@ -488,6 +550,11 @@ nav li a:hover{
     .experience-card, .gallery-card {
         width: 100%;
     }
+    .right{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .gallery-card {
@@ -510,11 +577,12 @@ nav li a:hover{
 }
 .gallery-card:hover {
     transform: translateY(-20px);
+    cursor: pointer;
 }
 .gallery-card h3 {
     font-size: 1.5rem;
     color: black;
-    margin: 0px 0;
+    margin: 15px;
 }
 
 #gallery-container{
@@ -524,6 +592,12 @@ nav li a:hover{
     justify-content: center;
     text-align:center;
     background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#gallery-container h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 #map-header{
@@ -561,6 +635,151 @@ nav li a:hover{
 
 #video-content h2 {
     margin: 20px;
+}
+
+#map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 20px;
+}
+@media (max-width: 500px) {
+    .newsletter-container {
+    padding: 1.5rem;
+    }
+
+    .map-container iframe {
+    height: 200px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    border-radius: 10px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    width: 100%;
+    list-style: none;
+}
+
+.dropdown-content a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+    color: #1b359c;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #f4f4f4;
+}
+.newsletter-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 90%;
+    text-align: center;
+}
+
+.newsletter-form h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.newsletter-form p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form input {
+    padding: 0.75rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+.newsletter-form button {
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 300px;
+}
+
+.newsletter-form button:hover {
+    background-color: #005fa3;
+}
+
+.footer-note {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@media (max-width: 500px) {
+    .newsletter-container {
+    padding: 1.5rem;
+    }
 }
 
 footer{
