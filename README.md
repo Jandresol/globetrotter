@@ -56,7 +56,7 @@ Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
   - [x] Styled with Flexbox that adapts to different screen sizes.  
 
 - [x] **Smartphone Friendly**
-  - [ x A design that is fully functional and aesthetically pleasing on smartphones is achieved using media queries.
+  - [x] A design that is fully functional and aesthetically pleasing on smartphones is achieved using media queries.
 
 ### Stretch Features
 
@@ -86,9 +86,9 @@ Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
+`https://www.loom.com/share/2760f392127049a5a6b95e7ace3661b2?sid=f018d074-e866-473d-94c4-984d667c41f7` Add the embedded URL code to your animated app walkthrough below, 
 
-`ADD_EMBEDDED_CODE_HERE`
+`<div style="position: relative; padding-bottom: 47.60416666666667%; height: 0;"><iframe src="https://www.loom.com/embed/2760f392127049a5a6b95e7ace3661b2?sid=0a7815b5-f60b-45a3-94ca-11e77f010215" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
 
 ### Reflection
 

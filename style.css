@@ -34,7 +34,7 @@ header > h1{
     font-size: 3rem;
 }
 #landing{
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url('https://lp-cms-production.imgix.net/2022-02/GettyImages-508265944%20RFC.jpg?w=1095&fit=crop&crop=faces%2Cedges&auto=format&q=75');
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url('https://lp-cms-production.imgix.net/2022-02/GettyImages-508265944%20RFC.jpg?w=1095&fit=crop&crop=faces%2Cedges&auto=format&q=75');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -50,6 +50,7 @@ h2{
 #landing > h1{
     color: white;
     font-size: 6rem;
+    padding: 40px;
 }
 
 #navigation {
